@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: "Web Developer Portfolio",
   description:
     "Professional portfolio showcasing web development projects, skills, and experience",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -35,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${geist.className} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
